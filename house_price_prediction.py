@@ -18,6 +18,7 @@ plt.scatter(data['size'], data['price'], color='blue')
 plt.title('House Size vs Price')
 plt.xlabel('Size (square feet)')
 plt.ylabel('Price (thousands of dollars)')
+plt.grid(True)
 plt.show()
 
 
