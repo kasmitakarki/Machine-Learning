@@ -27,7 +27,7 @@ plt.title('House Size vs Price')
 plt.xlabel('Size (square feet)')
 plt.ylabel('Price (thousands of dollars)')
 plt.grid(True)
-plt.savefit('scatterplot.png') #saves the plot
+plt.savefig('scatterplot.png') #saves the plot
 plt.show()
 
 #Model Building
