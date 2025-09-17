@@ -1,3 +1,4 @@
+#Task 1 data exploration
 #Load and inspect dataset
 
 # Import necessary libraries
@@ -30,7 +31,7 @@ plt.grid(True)
 plt.savefig('scatterplot.png') #saves the plot
 plt.show()
 
-#Model Building
+#Task 2 Model Building
 
 
 # Split the data into features (X) and target (y)
@@ -47,13 +48,17 @@ model.fit(X_train, y_train)
 # Predict house prices on the test set
 y_pred = model.predict(X_test)
 
+#Task 3 Model evaluation
+
 # Calculate the Mean Squared Error (MSE)
 
 
 mse = mean_squared_error(y_test, y_pred)
 print(f"Mean Squared Error (MSE): {mse}")
 
-# Plot the regression line along with the data points
+# Task 4 Reporting your findings
+
+#Plot the regression line along with the data points
 plt.scatter(X, y, color='blue', label='Actual Data')
 plt.plot(X, model.predict(X), color='red', label='Regression Line')
 plt.title('Linear Regression: House Size vs Price')
