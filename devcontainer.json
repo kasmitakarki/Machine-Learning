@@ -1,0 +1,9 @@
+{
+  "name": "Codespace with MS SQL",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu", // Base image
+  "features": {
+    "docker-in-docker": "latest" // Enables Docker support
+  },
+  "forwardPorts": [1433], // Forward the default SQL Server port
+  "postCreateCommand": "docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Your@Password123' -p 1433:1433 --name sqlserver -d mcr.microsoft.com/mssql/server:2022-latest"
+}
