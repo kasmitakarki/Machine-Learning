@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 # Step 1: Load the dataset
 # Replace `file_path` with your file path in GitHub Codespaces
-file_path = "customer_data.csv"  # Save the dataset as a CSV file
+file_path = "Customer_Churn_Dataset_Final.csv"  # Save the dataset as a CSV file
 data = pd.read_csv(file_path)
 
 # Step 2: Data Cleaning
